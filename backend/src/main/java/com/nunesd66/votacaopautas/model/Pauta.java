@@ -5,6 +5,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Getter
 @Setter
 @Entity
@@ -30,4 +32,13 @@ public class Pauta {
     @JoinColumn(nullable = false, foreignKey = @ForeignKey(name = "fk_pauta_associado"))
     private Associado associado;
 
+    @Column(name = "data_encerramento_votacoes", nullable = false, updatable = false)
+    private LocalDate dataEncerramentoVotacoes;
+
+    @PrePersist
+    public void aoPersistir() {
+        if (dataEncerramentoVotacoes == null) {
+            dataEncerramentoVotacoes = LocalDate.now().plusDays(7);
+        }
+    }
 }
