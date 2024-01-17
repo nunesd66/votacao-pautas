@@ -1,6 +1,5 @@
 package com.nunesd66.votacaopautas.dto;
 
-import com.nunesd66.votacaopautas.model.Pauta;
 import lombok.Getter;
 import lombok.Setter;
 

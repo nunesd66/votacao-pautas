@@ -1,7 +1,6 @@
 package com.nunesd66.votacaopautas.repository;
 
-import com.nunesd66.votacaopautas.model.Pauta;
-import com.nunesd66.votacaopautas.model.Votacao;
+import com.nunesd66.votacaopautas.entity.Votacao;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

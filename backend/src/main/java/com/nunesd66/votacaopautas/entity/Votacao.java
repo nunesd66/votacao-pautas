@@ -1,12 +1,10 @@
-package com.nunesd66.votacaopautas.model;
+package com.nunesd66.votacaopautas.entity;
 
 import com.nunesd66.votacaopautas.enumeration.SimNaoEnum;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.LocalDateTime;
 
 @Getter
 @Setter

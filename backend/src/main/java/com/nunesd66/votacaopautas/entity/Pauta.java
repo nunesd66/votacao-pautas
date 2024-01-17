@@ -1,4 +1,4 @@
-package com.nunesd66.votacaopautas.model;
+package com.nunesd66.votacaopautas.entity;
 
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;

@@ -1,12 +1,9 @@
 package com.nunesd66.votacaopautas.controller;
 
 import com.nunesd66.votacaopautas.dto.VotacaoDTO;
-import com.nunesd66.votacaopautas.model.Pauta;
-import com.nunesd66.votacaopautas.model.Votacao;
+import com.nunesd66.votacaopautas.entity.Votacao;
 import com.nunesd66.votacaopautas.service.VotacaoService;
-import jakarta.annotation.Nullable;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
